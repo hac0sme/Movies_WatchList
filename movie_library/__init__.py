@@ -15,7 +15,7 @@ def create_app():
         "SECRET_KEY", "pf9Wkove4IKEAXvy-cQkeDPhv9Cb3Ag-wyJILbq_dFw"
     )
     app.db = MongoClient(app.config["MONGODB_URI"]).get_default_database()
-    app.config['SERVER_NAME'] = 'app:5000'
+    #app.config['SERVER_NAME'] = 'app:5000'
 
     app.register_blueprint(pages)
     return app
