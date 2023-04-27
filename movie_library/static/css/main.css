@@ -121,6 +121,18 @@ window size increases. */
   margin: 0 auto;
 }
 
+@media screen and (max-width: 400px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav{
+    border-top: var(--border);
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+}
+
 .nav {
   display: flex;
 }
