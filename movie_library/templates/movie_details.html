@@ -62,7 +62,7 @@
                     <h2>Casting</h2>
                     <ul class="list">
                     {% for actor in movie.cast %}
-                        <li class="list__item">{{ actor }}</li>
+                        <li class="list__item">• {{ actor }}</li>
                     {% endfor %}
                     <ul>
                 </div>
@@ -72,7 +72,7 @@
                     <h2>Series</h2>
                     <ul class="list">
                     {% for movie_in_series in movie.series %}
-                        <li class="list__item">{{ movie_in_series }}</li>
+                        <li class="list__item">• {{ movie_in_series }}</li>
                     {% endfor %}
                     <ul>
                 </div>
